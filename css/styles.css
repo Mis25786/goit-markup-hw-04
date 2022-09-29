@@ -274,8 +274,15 @@ nav {
 .promo {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
 
   background-color: var(--color-bg-promo-footer);
+  background-image: url(../images/promo-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  max-width: 1600px;
 }
 
 .promo-box {
