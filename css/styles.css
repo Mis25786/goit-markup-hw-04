@@ -347,6 +347,13 @@ nav {
   margin-right: 30px;
 }
 
+.item-icon {
+  width: 70px;
+  height: 70px;
+  padding: 25px 100px;
+  background-color: var(--color-bg-hero);
+}
+
 .section-title {
   margin-bottom: 10px;
 
@@ -419,6 +426,8 @@ nav {
 
 .hero-meta {
   display: block;
+  align-items: center;
+  justify-content: center;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -460,14 +469,115 @@ nav {
 
 .hero-text {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
 }
 
+/* герої соц-мережі */
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.socials-box {
+  display: flex;
+}
+
+.socials-link {
+  text-decoration: none;
+}
+
+.socials-box {
+  display: flex;
+  gap: 10px;
+}
+
+.socials-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.socials-item:hover,
+.socials-item:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.socials-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* кліенти */
+
+.clients {
+  border-color: var(--primary-color-bacground);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--primary-color-title);
+}
+
+.clients-box {
+  display: flex;
+  /* flex-basis: calc(100% / 6 - 150px);
+  flex-basis: calc((100% - 150px) / 6); */
+  gap: 30px;
+  justify-content: center;
+}
+
+.clients-meta {
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.clients-meta:hover,
+.clients-meta:focus {
+  background-color: var(--accent-color);
+}
+
+.clients-link {
+  display: flex;
+  padding: 16px 32px;
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--accent-color);
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+}
+
 /* підвал */
+
 .contacts {
+  display: flex;
   padding: 60px 0;
   background-color: var(--color-bg-promo-footer);
 }
@@ -516,4 +626,45 @@ nav {
   color: var(--color-link-contacts);
   font-style: normal;
   text-decoration: none;
+}
+
+/* підвал соц-мережі */
+
+.socials-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}
+
+.socials-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.socials-footer-box {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.socials-footer-box:hover,
+.socials-footer-box:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.icon-footer {
+  width: 20px;
+  height: 20px;
 }
