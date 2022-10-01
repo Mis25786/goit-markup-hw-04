@@ -10,6 +10,7 @@
   --color-bg-hero: #f5f4fa;
   --color-text-promo: #ffffff;
   --color-link-contacts: rgba(255, 255, 255, 0.6);
+  --primary-socials-clients-color: #afb1b8;
 }
 
 body {
@@ -503,41 +504,36 @@ nav {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-}
-
-.socials-box {
-  display: flex;
-}
-
-.socials-link {
-  text-decoration: none;
-}
-
-.socials-box {
-  display: flex;
   gap: 10px;
 }
 
-.socials-item {
-  display: flex;
+.socials-link {
   width: 44px;
   height: 44px;
-  margin: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+
+  /* fill: var(--primary-socials-clients-color); */
 }
 
-.socials-item:hover,
-.socials-item:focus {
+.socials-link:hover,
+.socials-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
+
+  /* fill: red; */
+}
+
+/* один варіант як пітхопити колір лого з фоном */
+
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  fill: red;
 }
 
 .socials-icon {
-  width: 20px;
-  height: 20px;
+  fill: red;
 }
 
 /* кліенти */
@@ -560,41 +556,49 @@ nav {
 
 .clients-box {
   display: flex;
+
   /* формули не працьують чомусь */
   /* flex-basis: calc(100% / 6 - 150px);
   flex-basis: calc((100% - 150px) / 6); */
+
   gap: 30px;
   justify-content: center;
-}
-
-.clients-meta {
-  width: 170px;
-  height: 92px;
-
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  fill: #afb1b8;
-}
-
-.clients-meta:hover,
-.clients-meta:focus {
-  border-color: var(--accent-color);
 }
 
 .clients-link {
   display: flex;
   padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
 }
 
 .clients-icon {
   width: 106px;
   height: 60px;
+  fill: red;
 }
 
-/* .clients-icon:hover,
+.clients-icon:hover,
 .clients-icon:focus {
-  fill: var(--accent-color);
-} */
+  fill: red;
+  color: red;
+  background-color: blue;
+  border: 1px solid yellow;
+  border-color: fuchsia;
+}
 
 /* підвал */
 
