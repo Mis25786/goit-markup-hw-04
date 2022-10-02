@@ -147,10 +147,19 @@ nav {
   color: var(--accent-color);
 }
 
+.site .site-link:hover .header-contacts-icon,
+.site .site-link:focus .header-contacts-icon {
+  fill: var(--accent-color);
+  color: var(--accent-color);
+}
+
 .site .site-link {
   display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
+  justify-content: center;
 
   font-weight: 500;
   font-size: 14px;
@@ -159,6 +168,11 @@ nav {
   text-decoration: none;
 
   color: var(--primary-color-text);
+}
+
+.header-contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* головна інформація сайту */
@@ -525,8 +539,6 @@ nav {
   /* fill: red; */
 }
 
-/* один варіант як пітхопити колір лого з фоном */
-
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
   fill: red;
@@ -578,34 +590,41 @@ nav {
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--accent-color);
+  /* fill: var(--accent-color); */
 }
 
 .clients-icon {
+  border-color: var(--accent-color);
   width: 106px;
   height: 60px;
   fill: red;
 }
 
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+  border-color: #000000;
+}
+
 .clients-icon:hover,
 .clients-icon:focus {
   fill: red;
-  color: red;
-  background-color: blue;
-  border: 1px solid yellow;
-  border-color: fuchsia;
+  /* color: red; */
 }
-
 /* підвал */
 
 .contacts {
   display: flex;
   padding: 60px 0;
   background-color: var(--color-bg-promo-footer);
+}
+
+.container-footer {
+  display: flex;
+  gap: 70px;
+}
+
+.footer-box {
 }
 
 .contacts .logo-link {
