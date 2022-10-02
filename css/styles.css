@@ -10,7 +10,8 @@
   --color-bg-hero: #f5f4fa;
   --color-text-promo: #ffffff;
   --color-link-contacts: rgba(255, 255, 255, 0.6);
-  --primary-socials-clients-color: #afb1b8;
+  --primary-color-socials-clients: #afb1b8;
+  --secondary-color-socials: #ffffff;
 }
 
 body {
@@ -139,10 +140,6 @@ nav {
   gap: 30px;
 }
 
-/* .site-contacts .item + .item {
-  margin-left: 50px;
-} */
-
 .site .site-link:hover,
 .site .site-link:focus {
   color: var(--accent-color);
@@ -151,7 +148,6 @@ nav {
 .site .site-link:hover .header-contacts-icon,
 .site .site-link:focus .header-contacts-icon {
   fill: var(--accent-color);
-  color: var(--accent-color);
 }
 
 .site .site-link {
@@ -215,6 +211,9 @@ nav {
 .site-nav .site-button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -255,7 +254,7 @@ nav {
   width: 130px;
 }
 
-/* card-asaid */
+/* card */
 
 .card {
   display: flex;
@@ -265,7 +264,15 @@ nav {
 
 .aside {
   display: block;
-  /* flex-basis: calc((100% - 60px) / 3); */
+  width: calc((100% - 60px) / 3);
+}
+
+.aside-link:hover,
+.aside-link:focus {
+  display: inline-block;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-asaide {
@@ -377,24 +384,10 @@ nav {
   margin-bottom: 30px;
 }
 
-/* .section-item-box:hover,
-.section-item-box:focus {
-  border-color: var(--accent-color);
-} */
-
 .item-icon {
   width: 70px;
   height: 70px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
-
-/* .item-icon:hover,
-.item-icon:focus {
-  background-color: var(--accent-color);
-  fill: var(--accent-color);
-} */
 
 .section-title {
   margin-bottom: 10px;
@@ -541,17 +534,15 @@ nav {
 .socials-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
-
-  /* fill: red; */
 }
 
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
-  fill: red;
+  fill: var(--secondary-color-socials);
 }
 
 .socials-icon {
-  fill: red;
+  fill: var(--primary-color-socials-clients);
 }
 
 /* кліенти */
@@ -610,20 +601,14 @@ nav {
   border-color: var(--accent-color);
   width: 106px;
   height: 60px;
-  fill: red;
+  fill: var(--primary-color-socials-clients);
 }
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
   fill: var(--accent-color);
-  border-color: #000000;
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
-  fill: red;
-  /* color: red; */
-}
 /* підвал */
 
 .contacts {
@@ -634,6 +619,7 @@ nav {
 
 .container-footer {
   display: flex;
+  align-items: baseline;
   gap: 70px;
 }
 
@@ -692,7 +678,7 @@ nav {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -725,4 +711,5 @@ nav {
 .icon-footer {
   width: 20px;
   height: 20px;
+  fill: var(--secondary-color-socials);
 }
