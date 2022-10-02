@@ -100,7 +100,6 @@ nav {
 
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 344px;
 }
 
 .site-pagination .link:hover,
@@ -136,11 +135,13 @@ nav {
 
 .site-contacts {
   display: flex;
+  margin-left: auto;
+  gap: 30px;
 }
 
-.site-contacts .item + .item {
+/* .site-contacts .item + .item {
   margin-left: 50px;
-}
+} */
 
 .site .site-link:hover,
 .site .site-link:focus {
