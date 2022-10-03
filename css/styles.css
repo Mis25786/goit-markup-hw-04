@@ -269,8 +269,7 @@ nav {
 
 .aside-link:hover,
 .aside-link:focus {
-  display: inline-block;
-  border: 1px solid #eeeeee;
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -691,7 +690,7 @@ nav {
   gap: 10px;
 }
 
-.socials-footer-box {
+.footer-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -702,10 +701,9 @@ nav {
   border-radius: 50%;
 }
 
-.socials-footer-box:hover,
-.socials-footer-box:focus {
+.footer-link:hover,
+.footer-link:focus {
   background-color: var(--accent-color);
-  border-radius: 50%;
 }
 
 .icon-footer {
